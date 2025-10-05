@@ -19,8 +19,8 @@ const Menu = () => {
         { id: 'about-me', icon: <GoPerson /> },
         { id: 'skills', icon: <>{'<>'}</> },
         { id: 'works', icon: <FaTv /> },
-        { id: '', icon: <FaEdit /> },
-        { id: '', icon: <IoIosMail /> },
+        { id: 'blogs', icon: <FaEdit /> },
+        { id: 'contact', icon: <IoIosMail /> },
     ];
 
     const [activeId, setActiveId] = useState(() => {
