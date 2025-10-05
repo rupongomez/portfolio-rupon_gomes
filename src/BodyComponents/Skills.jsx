@@ -19,7 +19,7 @@ const Skills = () => {
                     <p className="mb-2">“I’m dedicated to lifelong learning and constant improvement.”</p>
                     <div className='flex gap-10 mt-10'>
                         {/* frontend */}
-                        <div className='bg-[#464646] flex flex-col gap-2 text-center items-center p-2 border-l-4 rounded-xl'>
+                        <div className='bg-black flex flex-col gap-2 text-center items-center p-2 border-l-4 border-blue-500 rounded-xl'>
                             <BsBrowserChrome className='text-2xl' />
                             <h3 className='font-bold text-xl'>Frontend Development</h3>
                             <p>React.js, Next.js, JavaScript,<br /> Tailwind

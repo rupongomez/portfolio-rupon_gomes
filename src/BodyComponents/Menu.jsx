@@ -18,9 +18,9 @@ const Menu = () => {
         { id: 'menu', icon: <AiOutlineAppstore /> },
         { id: 'about-me', icon: <GoPerson /> },
         { id: 'skills', icon: <>{'<>'}</> },
-        { id: 'tv', icon: <FaTv /> },
-        { id: 'blog', icon: <FaEdit /> },
-        { id: 'contact', icon: <IoIosMail /> },
+        { id: 'works', icon: <FaTv /> },
+        { id: '', icon: <FaEdit /> },
+        { id: '', icon: <IoIosMail /> },
     ];
 
     const [activeId, setActiveId] = useState(() => {

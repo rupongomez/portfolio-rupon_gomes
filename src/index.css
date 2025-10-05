@@ -22,9 +22,20 @@ body {
 }
 
 .glass-effect {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  /* darker tint */
+  background: rgba(0, 0, 0, 0.45);
+  /* darker semi-transparent black */
+  /* fallback for older browsers that ignore backdrop-filter */
+  background-color: rgba(0, 0, 0, 0.45);
+
+  /* stronger blur for a heavier glass effect */
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  backdrop-filter: blur(10px) saturate(120%);
+
+  /* subtle border and stronger shadow to emphasize depth */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+
+  /* ensure readable children */
+  color: #ffffff;
 }
