@@ -76,7 +76,7 @@ const Menu = () => {
     return (
         <div className='mt-16 mb-32'>
             <div className='flex'>
-                <ul className='fixed top-64 z-10 flex flex-col gap-4 border-2 w-fit h-fit p-3 rounded-full ml-5 items-center'>
+                <ul className=' hidden fixed top-48 z-10 md:flex flex-col gap-4 border-2 w-fit h-fit p-3 rounded-full ml-5 items-center'>
                     {navItems.map(item => {
                         const isActive = item.id === activeId;
                         const base = 'border rounded-full p-2 w-10 h-10 flex items-center justify-center transition-colors';
@@ -97,12 +97,12 @@ const Menu = () => {
                     })}
                 </ul>
                 <section id='menu' className='mx-auto'>
-                    <h2 className='font-bold text-5xl text-center mb-16'>Developer</h2>
+                    <h2 className='font-bold text-5xl text-center mb-16 mx-auto'>Developer</h2>
 
-                    <div className='flex items-center justify-around mx-36 lg: gap-15 '>
+                    <div className='md:flex items-center justify-around md:mx-36 gap-15 '>
                         {/* info card */}
-                        <div className="card  w-80 h-[420px] shadow-sm  border-radios flex flex-col items-center justify-center">
-                            <div className='flex flex-col justify-center my-auto '>
+                        <div className="card w-64  mx-auto md:w-80 h-[420px] shadow-sm  border-radios flex flex-col items-center justify-center mb-20">
+                            <div className='flex  flex-col justify-center my-auto '>
                                 <figure>
                                     <img
                                         className='w-30 h-30 rounded-full'
@@ -117,16 +117,16 @@ const Menu = () => {
                                         <p className='flex items-center gap-1'><BiSolidBriefcase />Full-time / Freelancer</p>
                                         <p className='flex items-center gap-1'><FaGlobe />www.rupongomez.com</p>
                                     </div>
-                                    <div className='flex gap-1'>
-                                        {technologies.map(technology => <div className="badge badge-primary rounded-full ">{technology}</div>)}
+                                    <div className=' '>
+                                        {technologies.map(technology => <div key={technology} className="badge badge-primary  rounded-full ml-1 mt-1">{technology}</div>)}
                                     </div>
-                                    <button className='btn hover:bg-white w-fit px-5 rounded-full mt-2 mx-auto'>Download CV</button>
+                                    <button className='btn hover:bg-white w-fit px-5 rounded-full  mx-auto'>Download CV</button>
                                 </div>
                             </div>
                         </div>
 
                         {/* Center title and text */}
-                        <div className='md:max-w-xl lg:max-w-2/5'>
+                        <div className='md:max-w-xl lg:max-w-2/5 mb-20 mx-5'>
                             {"<h1>"}
                             <h1 className='font-bold text-4xl ml-5'>Hey <br /> I'm Rupon, <br /> Full-Stack Developer
                                 <span className='text-sm'> {"</h1>"}</span> </h1>
@@ -137,11 +137,11 @@ const Menu = () => {
                                 I help businesses grow by building modern, scalable, and user-friendly web applications. If you’re looking for a developer who delivers clean code and real results, you’re in the right place.
                             </p>
                             {"</p>"} <br />
-                            <button className='btn btn-ghost ml-5 text-2xl'> Let's Talk <IoIosMail className='bg-gray-500 rounded-full w-6 p-1' /></button>
+                            <button className='btn btn-ghost ml-5 text-2xl'> <a href="#contact">Let's Talk</a> <IoIosMail className='bg-gray-500 rounded-full w-6 p-1' /></button>
                         </div>
 
                         {/* Experience */}
-                        <div className='bg-white text-black h-72 py-10 px-6 w-48 rounded-[60px] flex flex-col justify-center gap-5'>
+                        <div className='bg-white text-black h-72 py-10 px-6 w-48 rounded-[60px] flex flex-col justify-center gap-5 mx-auto'>
                             <p className='font-bold text-5xl flex items-center gap-2 text-left'>3<span className='text-sm  items-center'>Programming Language </span></p>
                             <p className='font-bold text-5xl flex items-center gap-2 justify-center'>9<span className='text-sm items-center'>Development Tools</span></p>
                             <p className='font-bold text-5xl flex items-center gap-2 justify-center'>4<span className='text-sm  items-center'>Years of Experience</span></p>

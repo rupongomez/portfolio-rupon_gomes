@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Title from '../Components/Title';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
     const form = useRef();
@@ -14,6 +15,19 @@ const Contact = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    toast.success('Thank you! Rupon Gomez has received your message and will get back to you soon.', {
+                        style: {
+                            background: '#000',    // full black background
+                            color: '#fff',         // white text
+                            border: '1px solid #fff', // optional subtle border
+                            padding: '16px',
+                        },
+                        iconTheme: {
+                            primary: '#fff',       // white icon color
+                            secondary: '#000',     // black background behind the icon
+                        },
+                    });
+
                 },
                 (error) => {
                     console.log('FAILED...', error.text);

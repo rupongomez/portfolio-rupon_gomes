@@ -8,33 +8,33 @@ const Skills = () => {
     return (
         <div
             id='skills'
-            className="w-full h-screen bg-center bg-cover bg-no-repeat mt-0"
+            className="w-full md:h-screen bg-center bg-cover  bg-no-repeat mt-0"
             style={{ backgroundImage: `url(${codingBg})` }}
         >
             {/* glass overlay */}
-            <div className="glass-effect w-full h-full flex items-center justify-center p-8">
+            <div className="glass-effect w-full h-full md:flex  items-center justify-center p-8">
                 {/* Put your skills content here */}
                 <div className="max-w-4xl text-white text-center">
                     <h2 className="text-4xl font-bold mb-4 text-blue-400 ">{"<Skills/>"}</h2>
                     <p className="mb-2">“I’m dedicated to lifelong learning and constant improvement.”</p>
-                    <div className='flex gap-10 mt-10'>
+                    <div className='flex flex-col md:flex-row gap-10 mt-10'>
                         {/* frontend */}
-                        <div className='bg-black flex flex-col gap-2 text-center items-center p-2 border-l-4 border-blue-500 rounded-xl'>
+                        <div className='bg-black border-blue-500 flex flex-col gap-2 text-center items-center p-2 border-l-4  rounded-xl'>
                             <BsBrowserChrome className='text-2xl' />
-                            <h3 className='font-bold text-xl'>Frontend Development</h3>
+                            <h3 className='font-semibold text-xl'>Frontend Development</h3>
                             <p>React.js, Next.js, JavaScript,<br /> Tailwind
                             </p>
                         </div>
-                        <div className='bg-[#464646] flex flex-col gap-2 text-center items-center p-2 border-l-4 rounded-xl'>
+                        <div className='bg-black border-blue-500 flex flex-col gap-2 text-center items-center p-2 border-l-4 rounded-xl'>
                             <FaDatabase className='text-2xl' />
-                            <h3 className='font-bold text-xl'>Backend & Database</h3>
+                            <h3 className='font-semibold text-xl'>Backend & Database</h3>
                             <p>Node.js, Express.js, MongoDB, <br /> REST API
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-15 mt-10'>
+                    <div className='grid grid-cols-2 md:grid-cols-4  items-center gap-15 mt-10'>
                         <div>
-                            <img className='w-22' src="https://img.icons8.com/?size=100&id=23028&format=png&color=E54F26" alt="" />
+                            <img className='md:w-22' src="https://img.icons8.com/?size=100&id=23028&format=png&color=E54F26" alt="" />
                             <h3>HTML</h3>
                         </div>
                         <div>
@@ -42,11 +42,11 @@ const Skills = () => {
                             <h3>CSS</h3>
                         </div>
                         <div>
-                            <img className='w-22 ' src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="" />
+                            <img className='md:w-22 ' src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="" />
                             <h3>Javascript</h3>
                         </div>
                         <div>
-                            <img className='w-22 ' src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000" alt="" />
+                            <img className='md:w-22 ' src="https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000" alt="" />
                             <h3>React</h3>
                         </div>
                     </div>

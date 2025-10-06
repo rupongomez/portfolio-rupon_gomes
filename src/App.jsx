@@ -1,16 +1,18 @@
 import './App.css'
 import Body from './Body'
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 function App() {
 
   return (
     <>
-      <div className='w-11/12 mx-auto mt-4'>
+      <div className='  mt-4'>
         <NavBar />
         <div className="divider"></div>
       </div>
       <Body />
+      <Footer></Footer>
     </>
   )
 }
